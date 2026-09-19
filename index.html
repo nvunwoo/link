@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>딩가딩 프로젝트 - 경주 용강초</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(47, 110, 255, 0.13), transparent 34%),
+        #061426;
+      color: #ffffff;
+      font-family:
+        Pretendard,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 52px;
+      font-size: clamp(2.1rem, 6vw, 4.6rem);
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
+    }
+
+    .link-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: min(520px, 100%);
+      padding: 20px 32px;
+      border: 1px solid rgba(113, 170, 255, 0.8);
+      border-radius: 16px;
+      background: linear-gradient(135deg, #1769ff, #0048cc);
+      color: #ffffff;
+      font-size: clamp(1rem, 2.6vw, 1.3rem);
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow:
+        0 0 18px rgba(30, 110, 255, 0.75),
+        0 0 42px rgba(30, 110, 255, 0.42),
+        0 12px 35px rgba(0, 0, 0, 0.35);
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+      animation: glow 2.2s ease-in-out infinite alternate;
+    }
+
+    .link-button:hover {
+      transform: translateY(-4px) scale(1.025);
+      filter: brightness(1.08);
+      box-shadow:
+        0 0 26px rgba(65, 138, 255, 0.95),
+        0 0 60px rgba(30, 110, 255, 0.6),
+        0 16px 42px rgba(0, 0, 0, 0.42);
+    }
+
+    .link-button:active {
+      transform: translateY(-1px) scale(0.99);
+    }
+
+    .link-button:focus-visible {
+      outline: 3px solid #b6d4ff;
+      outline-offset: 5px;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow:
+          0 0 15px rgba(30, 110, 255, 0.58),
+          0 0 32px rgba(30, 110, 255, 0.34),
+          0 12px 35px rgba(0, 0, 0, 0.35);
+      }
+      to {
+        box-shadow:
+          0 0 26px rgba(68, 145, 255, 0.9),
+          0 0 52px rgba(30, 110, 255, 0.54),
+          0 12px 35px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        margin-bottom: 38px;
+      }
+
+      .link-button {
+        width: 100%;
+        padding: 18px 20px;
+        border-radius: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .link-button {
+        animation: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>딩가딩 프로젝트 - 경주 용강초</h1>
+
+    <a
+      class="link-button"
+      href="https://padlet.com/fumblingpromotionsystems/2026-_-19-rm2c7grysftt34ib"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      패들렛: 작업물 공유 사이트
+    </a>
+  </main>
+</body>
+</html>
